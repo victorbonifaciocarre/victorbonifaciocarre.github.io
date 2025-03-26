@@ -1,0 +1,172 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* NEW */
+.input-field {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Exchange Rate Styles */
+.exchange-rate-input.forced-rate {
+  border: 3px solid blue;
+  background-color: #ffeeee;
+}
+
+.exchange-rate-input.updated-rate {
+  border: 3px solid green;
+  background-color: #e0f7ff;
+  transition: background-color 1s ease-out;
+}
+
+.exchange-rate-input.overwritten-rate {
+  border: 3px solid red;
+  background-color: #fff3e0;
+  transition: background-color 1s ease-out;
+}
+
+/* OTHER */
+.currency-converter {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+  gap: 15px; /* Ajoute de l'espace entre les éléments */
+}
+
+.currency-field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.currency-label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.convert-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.convert-button:hover {
+  background-color: #0056b3;
+}
+
+/* Toggle Switch */
+.toggle-switch-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 60px; /* Largeur minimale pour éviter l'écrasement */
+}
+
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;  /* Largeur du switch */
+  height: 26px; /* Hauteur du switch */
+}
+
+.toggle-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.toggle-switch .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 26px;
+}
+
+.toggle-switch input:checked + .slider {
+  background-color: #007bff;
+}
+
+.toggle-switch .slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+.toggle-switch input:checked + .slider:before {
+  transform: translateX(24px);
+}
+
+.conversions-history {
+  display: flex;
+  flex-direction: column;
+}
+
+.converter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
