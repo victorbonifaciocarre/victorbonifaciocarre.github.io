@@ -1,4 +1,5 @@
 import React from "react";
+import CurrencyConverter from "./components/organisms/CurrencyConverter";
 import "./App.css";
 
 /**
@@ -9,6 +10,7 @@ const App: React.FC = () => {
   return (
     <div className="app-container">
       <h1>Convertisseur de devises</h1>
+      <CurrencyConverter />
     </div>
   );
 };
